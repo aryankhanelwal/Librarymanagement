@@ -1,0 +1,14 @@
+
+<html>
+{% include "navbaradmin.html" %}
+</br>
+    <body style="background-color: cyan;">
+        <h1>Librarian Sign Up </h1>
+<form method="POST">
+    {% csrf_token %}
+{{LibForm.as_p}}
+<input type="submit"/>
+</form>
+    </body>
+</html>
+

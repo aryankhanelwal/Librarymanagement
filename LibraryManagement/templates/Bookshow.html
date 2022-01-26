@@ -1,0 +1,24 @@
+{% include "afterloginnav.html" %}</br></br></br>
+<style>
+table{
+	text-align: center;
+	table-layout: inherit;
+}
+</style>
+<div>
+<table border=1>
+	<tr>
+	<th>BookId</th><th>Name</th><td>Author</td><th>Delete </th>
+	</tr>
+
+{%for i in Bookdata%}
+	<tr>
+	<td>{{i.BookId}}</td><td>{{i.Name}}</td><td>{{i.Author}}</td><td><a href="{% url 'Book_delete' %}?BookId={{ i.BookId }}">delete</a></td>
+
+	
+	
+	
+	</tr>
+{%endfor%}
+</table>
+</div>

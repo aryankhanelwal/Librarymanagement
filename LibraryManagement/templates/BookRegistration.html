@@ -1,0 +1,13 @@
+{% include "afterloginnav.html" %}
+<br/><br/><br/>
+<html>
+    
+    <body style="background-color: wheat; text-align: center;">
+        <h1>Add Books </h1>
+<form method="POST">
+    {% csrf_token %}
+{{BookForm.as_p}}
+<input type="submit"/>
+</form>
+    </body>
+</html>

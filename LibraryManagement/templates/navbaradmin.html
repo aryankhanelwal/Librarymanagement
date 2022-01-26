@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Library First Page</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        
+    </head>
+    <body>
+
+       <h1 style="border-radius: 5px;">Library Management</h1>
+        <div  style="position: relative; z-index: 4; font-size: 18px; background-color:black; color: rgb(40,48, 53); padding-left: 12px; padding-right: 16px; font-family:  sans-serif; ">
+
+    </body>
+<body style="background:whitesmoke;">
+<div> 
+    
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="{% url 'first' %}">MyLibrary</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="{% url 'aboutus' %}">About us</a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="{% url 'empRegis' %}"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+    </nav>
+  </div>
+</div> 
+
+</body>

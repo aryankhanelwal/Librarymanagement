@@ -1,0 +1,33 @@
+<html>
+
+<div>
+{% include "navbaradmin.html" %}
+</div>
+
+<div>
+  <style >
+   .down {text-align:center ;
+   color: rgb(0, 0, 0);
+   width: 1500px;
+   }
+   
+  form{
+    text-align: center;
+  }
+  .psw{
+    text-align: center;
+  }
+</style>
+
+<h1 class="down">ADMIN'S LOGIN</h1>
+
+<body style="background-image: url('https://www.stallionglobal.com/uploads/links/Title_68.jpg');">  
+<form class="post-form"  method="post">
+  {% csrf_token %}
+ {{ form.as_p }}
+  <input type="submit" value="Submit">
+  <button type="reset" class="cancelbtn">reset</button>
+  
+</div>
+</form>
+</body>

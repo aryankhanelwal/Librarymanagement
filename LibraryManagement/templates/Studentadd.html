@@ -1,0 +1,30 @@
+<html>
+{% include "afterloginnav.html" %}
+<br\></br>
+    <body>
+<style>
+h3{
+text-align: center;
+}
+p{
+    text-align: center;
+
+}
+
+form{
+    text-align: center;
+    
+}
+</style>
+
+        </br></br><h3>Student Sign Up </h3>
+        <p>Please fill in this form to add a student.</p>
+<form method="POST">
+    {% csrf_token %}
+{{StudentForm.as_p}}
+<input type="submit"/>
+<input type="reset">
+
+</form>
+    </body>
+</html>

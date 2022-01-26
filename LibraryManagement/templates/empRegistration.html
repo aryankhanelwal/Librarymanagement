@@ -1,0 +1,28 @@
+<html>
+{% include "navbaradmin.html" %}
+
+    <body style="background-color: cyan;">
+<style>
+h3{
+text-align: center;
+}
+p{
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}
+</style>
+        <h3>Administrator Sign Up </h3>
+        <p>Please fill in this form to create an account.</p>
+<form method="POST">
+    {% csrf_token %}
+{{empForm.as_p}}
+<input type="submit"/>
+<input type="reset">
+<a href="{% url 'login' %}">Already Registered</a></h1>
+
+</form>
+    </body>
+</html>
